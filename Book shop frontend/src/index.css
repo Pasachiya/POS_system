@@ -1,0 +1,56 @@
+/* ...existing code... */
+
+.select-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2.25rem 0.5rem 0.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23cbd5e1' stroke-width='2' viewBox='0 0 24 24'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 1rem;
+  color-scheme: dark;
+}
+
+.select-dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.select-dropdown:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
+}
+
+.select-dropdown:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.select-dropdown--error {
+  border-color: #f87171;
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.25);
+}
+
+.select-dropdown option {
+  color: #111827 !important;            /* slate-900 */
+  background-color: #ffffff !important;  /* white */
+}
+
+.select-dropdown option:checked,
+.select-dropdown option:hover,
+.select-dropdown option:focus {
+  color: #ffffff !important;
+  background-color: #1f2937 !important;  /* gray-800 */
+}
+
+.select-dropdown option[value=""] {
+  color: #9ca3af !important;             /* gray-400 */
+}
+
+/* ...existing code... */

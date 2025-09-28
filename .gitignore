@@ -1,0 +1,36 @@
+# ---- General ----
+*.log
+*.env
+*.DS_Store
+node_modules/
+dist/
+build/
+out/
+
+# ---- React / Frontend ----
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.vite/
+frontend/.next/
+frontend/.turbo/
+
+# ---- Spring Boot / Backend ----
+backend/target/
+backend/.gradle/
+backend/build/
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.idea/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+
+# ---- IDE / Editors ----
+.vscode/
+.idea/
+*.iml
+
+# ---- OS Specific ----
+Thumbs.db
